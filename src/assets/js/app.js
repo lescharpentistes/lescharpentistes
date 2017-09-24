@@ -8,14 +8,14 @@ sr.reveal('.sr', {
     origin: 'right',
     duration: 2500,
     rotate: { x: 0, y: 0, z: 0 },
-    delay: 4,
+    delay: 3,
     easing: 'ease'
 });
 
 sr.reveal('.sr-b', {
     origin: 'bottom',
     duration: 2500,
-    delay: 4,
+    delay: 3,
     easing: 'ease'
 });
 
