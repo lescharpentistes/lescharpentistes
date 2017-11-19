@@ -12,9 +12,44 @@
   </head>
   <body>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+  <div class="hamburger" id="menu-btn" data-effect="st-effect-5">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
 
-    <script src="{{root}}assets/js/app.js"></script>
+  <div id="st-container" class="st-container st-effect-5">
+    <nav class="st-menu st-effect-5" id="menu-5">
+      <h2 class="icon icon-stack"><a href="/"><img class="logo-project-list" src="'../../assets/img/logo-toit-texte.svg"></a></h2>
+      <ul>
+        <li class="menu-it"><a class="" href="project-list-commercial.html"><span class="">Commercial</span></a></li>
+        <li class="menu-it"><a class="" href="project-list-residentiel.html"><span>Résidentiel</span></a></li>
+        <li class="menu-it"><a class="" href="project-list-projets-speciaux.html"><span>Sur Mesure</span></a></li>
+        <li class="menu-it"><a class="" href="#">
+          <svg width="32px" height="32px" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="facebook" fill-rule="nonzero" fill="#000000">
+                <path d="M0,0 L0,455.73 L242.704,455.73 L242.704,279.691 L183.374,279.691 L183.374,207.827 L242.704,207.827 L242.704,147.474 C242.704,103.581 278.286,67.999 322.179,67.999 L384.204,67.999 L384.204,132.621 L339.822,132.621 C325.875,132.621 314.568,143.928 314.568,157.875 L314.568,207.828 L383.089,207.828 L373.619,279.692 L314.568,279.692 L314.568,455.73 L455.73,455.73 L455.73,0 L0,0 Z" id="Shape"></path>
+              </g>
+            </g>
+          </svg></a></li>
+      </ul>
+    </nav>
+    <div class="st-pusher">
+      <div class="st-content"><!-- this is the wrapper for the content -->
+        <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+            {{> body}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{root}}assets/js/emergence.min.js"></script>
+  <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
