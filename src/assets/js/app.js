@@ -1,5 +1,9 @@
 $(document).foundation();
 
+var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+
 // Changing the defaults
 window.sr = ScrollReveal({ reset: false });
 
@@ -25,16 +29,6 @@ sr.reveal('.sr-box', {
     distance: '2rem'
 }, 200);
 
-
-// $(document).ready(function(){
-//     $('.sl').slick({
-//         // autoplay: true,
-//         adaptiveHeight: false,
-//         vertical: true,
-//         verticalSwiping: true,
-//
-// });
-// });
 
 // $(".no-filter-call").hover(
 //     function () {
