@@ -440,11 +440,14 @@ $sans-serif: Roboto, sans-serif;
 //}
 
 .cover {
-  @media screen and (max-width: 39.9375em) {
-    object-fit: cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+/*
+  @media screen and (max-width: 64em) {
     height: 100vh;
     width: 100vw;
-  }
+  }*/
 }
 
 .logo-homepage {
@@ -601,7 +604,7 @@ $sans-serif: Roboto, sans-serif;
 //----------------------------------------------footer-----------------------------------------------------
 
 .footer-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #ffffff;
   font-family: $sans-serif;
 }
