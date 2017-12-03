@@ -444,7 +444,7 @@ $sans-serif: Roboto, sans-serif;
   height: 100vh;
   width: 100vw;
 
-  @media screen and (min-width: 40em) {
+  @media screen and (max-width: 40em) {
     object-fit: cover;
     height: 400px;
     width: 100vw;
