@@ -40,11 +40,6 @@ $(".cursor-pointer").click(function() {
     return false;
 });
 
-$('#container').imagesLoaded( { background: true }, function() {
-    console.log('#container background image loaded');
-});
-
-
 
 
 $("#menu-btn").click(function(e){
@@ -66,6 +61,9 @@ $(document).click(function(){
 
     }
 });
+
+
+
 
 
 
