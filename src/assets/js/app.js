@@ -1,9 +1,5 @@
 $(document).foundation();
 
-var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy"
-});
-
 // Changing the defaults
 window.sr = ScrollReveal({ reset: false });
 
@@ -41,7 +37,6 @@ $(".cursor-pointer").click(function() {
 });
 
 
-
 $("#menu-btn").click(function(e){
     e.stopPropagation();
     if ($("#st-container").hasClass("st-menu-open")) {
@@ -58,7 +53,6 @@ $(document).click(function(){
     if($("#st-container").hasClass("st-menu-open")) {
         $("#st-container").removeClass("st-menu-open");
         $("#menu-btn").removeClass("is-active");
-
     }
 });
 
